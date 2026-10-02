@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="AI Teaching Assistant preview">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#58a6ff"/><stop offset="1" stop-color="#bc8cff"/></linearGradient></defs>
+<rect width="640" height="360" fill="#0d1117"/>
+<rect width="640" height="360" fill="url(#g)" opacity=".18"/>
+<rect x="24" y="24" width="592" height="312" rx="12" fill="#0d1117" stroke="#30363d"/>
+<path d="M24 36a12 12 0 0 1 12-12h568a12 12 0 0 1 12 12v22H24z" fill="#161b22"/>
+<circle cx="46" cy="41" r="6" fill="#ff5f56"/><circle cx="68" cy="41" r="6" fill="#ffbd2e"/><circle cx="90" cy="41" r="6" fill="#27c93f"/>
+<text x="320" y="46" text-anchor="middle" font-family="Consolas,Menlo,monospace" font-size="13" fill="#8b949e">rag_pipeline.py</text>
+<text x="48" y="100" font-family="Segoe UI,Arial,sans-serif" font-size="26" font-weight="700" fill="#f0f6fc">AI Teaching Assistant</text>
+<rect x="48" y="112" width="64" height="4" rx="2" fill="url(#g)"/>
+<text x="48" y="150" font-family="Consolas,Menlo,monospace" font-size="17" fill="#7ee787">video → whisper.transcribe()</text><text x="48" y="180" font-family="Consolas,Menlo,monospace" font-size="17" fill="#79c0ff">chunks → embeddings</text><text x="48" y="210" font-family="Consolas,Menlo,monospace" font-size="17" fill="#d2a8ff">query → semantic_retrieval()</text><text x="48" y="240" font-family="Consolas,Menlo,monospace" font-size="17" fill="#ffa657">answer = ollama.generate(context)</text></svg>

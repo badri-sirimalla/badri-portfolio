@@ -1,0 +1,2823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta
+    name="description"
+    content="Badri Sirimalla — Python Developer, Software Developer, and AI & ML Engineer building intelligent applications, backend systems, REST APIs, RAG systems, and full-stack products."
+  />
+
+  <meta
+    name="keywords"
+    content="Badri Sirimalla, Python Developer, Software Developer, AI & ML Engineer, Python, Machine Learning, Flask, FastAPI, REST API, RAG, Hyderabad"
+  />
+
+  <meta
+    name="author"
+    content="Badri Sirimalla"
+  />
+
+  <meta
+    name="robots"
+    content="index, follow"
+  />
+
+  <meta
+    name="theme-color"
+    content="#ffffff"
+  />
+
+  <!-- Open Graph -->
+
+  <meta
+    property="og:title"
+    content="Badri Sirimalla — Python Developer | Software Developer | AI & ML Engineer"
+  />
+
+  <meta
+    property="og:description"
+    content="Python Developer, Software Developer, and AI & ML Engineer building backend systems, intelligent applications, REST APIs, RAG systems, and full-stack products."
+  />
+
+  <meta
+    property="og:type"
+    content="website"
+  />
+
+  <meta
+    property="og:url"
+    content="https://badri-sirimalla.vercel.app/"
+  />
+
+  <meta
+    property="og:image"
+    content="assets/images/Badri.jpg"
+  />
+
+  <!-- Fonts -->
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  />
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Styles -->
+
+  <link
+    rel="stylesheet"
+    href="assets/css/style.css"
+  />
+
+  <title>
+    Badri Sirimalla — Python Developer | Software Developer | AI & ML Engineer
+  </title>
+</head>
+
+
+<body>
+
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+
+  <!-- =====================================================
+       SVG ICON SYSTEM
+       ===================================================== -->
+
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    style="display:none"
+    aria-hidden="true"
+  >
+
+    <symbol id="i-code" viewBox="0 0 24 24">
+      <path
+        d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.8"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </symbol>
+
+
+    <symbol id="i-code-square" viewBox="0 0 24 24">
+      <rect
+        x="3"
+        y="3"
+        width="18"
+        height="18"
+        rx="3"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+      />
+
+      <path
+        d="m9 9-3 3 3 3M15 9l3 3-3 3"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </symbol>
+
+
+    <symbol id="i-github" viewBox="0 0 24 24">
+      <path
+        fill="currentColor"
+        d="M12 .6a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.04c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.09 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.48.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.17 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.87.12 3.17.76.84 1.23 1.91 1.23 3.22 0 4.62-2.8 5.64-5.48 5.94.43.37.81 1.1.81 2.22v3.3c0 .32.22.69.83.57A12 12 0 0 0 12 .6Z"
+      />
+    </symbol>
+
+
+    <symbol id="i-linkedin" viewBox="0 0 24 24">
+      <path
+        fill="currentColor"
+        d="M5.2 3.5A2.5 2.5 0 1 1 .2 3.5a2.5 2.5 0 0 1 5 0ZM.6 8h4.9v15H.6V8Zm7.9 0h4.7v2.05h.07c.65-1.2 2.25-2.46 4.63-2.46 4.95 0 5.86 3.26 5.86 7.5V23h-4.9v-7.03c0-1.68-.03-3.84-2.34-3.84-2.34 0-2.7 1.83-2.7 3.72V23H8.5V8Z"
+      />
+    </symbol>
+
+
+    <symbol id="i-youtube" viewBox="0 0 24 24">
+      <path
+        fill="currentColor"
+        d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z"
+      />
+    </symbol>
+
+
+    <symbol id="i-mail" viewBox="0 0 24 24">
+      <rect
+        x="3"
+        y="5"
+        width="18"
+        height="14"
+        rx="2"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+      />
+
+      <path
+        d="m4 7 8 6 8-6"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </symbol>
+
+
+    <symbol id="i-phone" viewBox="0 0 24 24">
+      <path
+        d="M7 3h3l1.2 4-2 1.6a15 15 0 0 0 6.2 6.2l1.6-2 4 1.2v3c0 1.1-.9 2-2 2C11.3 19 5 12.7 5 5c0-1.1.9-2 2-2Z"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linejoin="round"
+      />
+    </symbol>
+
+
+    <symbol id="i-map" viewBox="0 0 24 24">
+      <path
+        d="M12 21s7-6.1 7-12A7 7 0 1 0 5 9c0 5.9 7 12 7 12Z"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+      />
+
+      <circle
+        cx="12"
+        cy="9"
+        r="2.2"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+      />
+    </symbol>
+
+
+    <symbol id="i-external" viewBox="0 0 24 24">
+      <path
+        d="M14 4h6v6M20 4l-9 9"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.8"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+
+      <path
+        d="M19 13v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h5"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.8"
+        stroke-linecap="round"
+      />
+    </symbol>
+
+
+    <symbol id="i-arrow" viewBox="0 0 24 24">
+      <path
+        d="M5 12h13M13 6l6 6-6 6"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.8"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </symbol>
+
+
+    <symbol id="i-download" viewBox="0 0 24 24">
+      <path
+        d="M12 3v11m0 0 4-4m-4 4-4-4M5 19h14"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.8"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </symbol>
+
+
+    <symbol id="i-sun" viewBox="0 0 24 24">
+      <circle
+        cx="12"
+        cy="12"
+        r="4"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+      />
+
+      <path
+        d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+      />
+    </symbol>
+
+
+    <symbol id="i-moon" viewBox="0 0 24 24">
+      <path
+        d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5 8.5 8.5 0 1 0 20.5 14.5Z"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linejoin="round"
+      />
+    </symbol>
+
+
+    <symbol id="i-menu" viewBox="0 0 24 24">
+      <path
+        d="M4 7h16M4 12h16M4 17h16"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.8"
+        stroke-linecap="round"
+      />
+    </symbol>
+
+
+    <symbol id="i-x" viewBox="0 0 24 24">
+      <path
+        d="m6 6 12 12M18 6 6 18"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.8"
+        stroke-linecap="round"
+      />
+    </symbol>
+
+
+    <symbol id="i-server" viewBox="0 0 24 24">
+      <rect
+        x="3"
+        y="4"
+        width="18"
+        height="6"
+        rx="2"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+      />
+
+      <rect
+        x="3"
+        y="14"
+        width="18"
+        height="6"
+        rx="2"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+      />
+
+      <path
+        d="M7 7h.01M7 17h.01"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.5"
+        stroke-linecap="round"
+      />
+    </symbol>
+
+
+    <symbol id="i-brain" viewBox="0 0 24 24">
+      <path
+        d="M9 4.5A3 3 0 0 0 4.5 7a3 3 0 0 0 .7 5.8A3.2 3.2 0 0 0 8 18.5c.5 0 1-.1 1.4-.3A3 3 0 0 0 12 21V4.8a3 3 0 0 0-3-3 3 3 0 0 0-3 3"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.6"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+
+      <path
+        d="M15 4.5A3 3 0 0 1 19.5 7a3 3 0 0 1-.7 5.8A3.2 3.2 0 0 1 16 18.5c-.5 0-1-.1-1.4-.3A3 3 0 0 1 12 21V4.8a3 3 0 0 1 3-3 3 3 0 0 1 3 3"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.6"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </symbol>
+
+
+    <symbol id="i-database" viewBox="0 0 24 24">
+      <ellipse
+        cx="12"
+        cy="5"
+        rx="8"
+        ry="3"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+      />
+
+      <path
+        d="M4 5v7c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12v7c0 1.7 3.6 3 8 3s8-1.3 8-3v-7"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+      />
+    </symbol>
+
+
+    <symbol id="i-graduation" viewBox="0 0 24 24">
+      <path
+        d="m3 9 9-5 9 5-9 5-9-5Z"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linejoin="round"
+      />
+
+      <path
+        d="M7 11.2v4.2c0 1.7 2.2 3.1 5 3.1s5-1.4 5-3.1v-4.2M21 9v6"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linecap="round"
+      />
+    </symbol>
+
+
+    <symbol id="i-award" viewBox="0 0 24 24">
+      <circle
+        cx="12"
+        cy="8"
+        r="5"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+      />
+
+      <path
+        d="m8.5 12.2-1 8 4.5-2.4 4.5 2.4-1-8"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        stroke-linejoin="round"
+      />
+    </symbol>
+
+
+    <symbol id="i-check" viewBox="0 0 24 24">
+      <path
+        d="m5 12 4 4L19 6"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </symbol>
+
+  </svg>
+
+
+  <!-- =====================================================
+       ACCESSIBILITY
+       ===================================================== -->
+
+  <a
+    href="#main-content"
+    class="skip-link"
+  >
+    Skip to content
+  </a>
+
+
+  <!-- =====================================================
+       HEADER
+       ===================================================== -->
+
+  <header
+    class="site-header"
+    id="top"
+  >
+
+    <div class="container nav-wrap">
+
+      <a
+        href="#home"
+        class="brand"
+        aria-label="Badri Sirimalla home"
+      >
+
+        <span class="brand-mark">
+          BS
+        </span>
+
+        <span class="brand-name">
+          Badri Sirimalla
+        </span>
+
+      </a>
+
+
+      <nav
+        class="site-nav"
+        id="site-nav"
+        aria-label="Primary navigation"
+      >
+
+        <ul>
+
+          <li>
+            <a
+              href="#about"
+              class="nav-link"
+            >
+              About
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#skills"
+              class="nav-link"
+            >
+              Stack
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#projects"
+              class="nav-link"
+            >
+              Work
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#education"
+              class="nav-link"
+            >
+              Education
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#certifications"
+              class="nav-link"
+            >
+              Certifications
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#contact"
+              class="nav-link"
+            >
+              Contact
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+      <div class="nav-actions">
+
+        <button
+          class="icon-btn"
+          id="theme-toggle"
+          type="button"
+          aria-label="Toggle theme"
+          title="Toggle theme"
+        >
+
+          <svg class="icon">
+            <use href="#i-sun"></use>
+          </svg>
+
+        </button>
+
+
+        <button
+          class="menu-btn"
+          id="menu-toggle"
+          type="button"
+          aria-label="Open navigation"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+
+          <svg class="icon">
+            <use href="#i-menu"></use>
+          </svg>
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- =====================================================
+       MAIN
+       ===================================================== -->
+
+  <main id="main-content">
+
+
+    <!-- ===================================================
+         HERO
+         =================================================== -->
+
+    <section
+      class="hero"
+      id="home"
+    >
+
+      <div class="container hero-grid">
+
+
+        <!-- HERO CONTENT -->
+
+        <div class="hero-content reveal">
+
+          <div class="eyebrow">
+            OPEN TO • PYTHON DEVELOPMENT • SOFTWARE DEVELOPMENT • AI & ML ENGINEERING
+          </div>
+
+
+          <!-- BIG PERSONAL BRAND -->
+
+          <h1>
+            Badri
+            <span>Sirimalla.</span>
+          </h1>
+
+
+          <div class="hero-role">
+
+            Python Developer
+
+            <span>•</span>
+
+            Software Developer
+
+            <span>•</span>
+
+            AI & ML Engineer
+
+          </div>
+
+
+          <p class="hero-intro">
+            I build production-minded software with Python — from backend systems and REST APIs to AI/ML applications and full-stack products designed to solve practical problems.
+          </p>
+
+
+          <div class="btn-row">
+
+            <a
+              href="#projects"
+              class="btn btn-primary"
+            >
+
+              Explore my work
+
+              <svg class="icon">
+                <use href="#i-arrow"></use>
+              </svg>
+
+            </a>
+
+
+            <a
+              href="assets/Badri_Sirimalla_Resume.pdf"
+              class="btn btn-outline"
+              target="_blank"
+              rel="noopener"
+            >
+
+              Resume
+
+              <svg class="icon">
+                <use href="#i-download"></use>
+              </svg>
+
+            </a>
+
+          </div>
+
+
+          <div
+            class="social-row"
+            aria-label="Social profiles"
+          >
+
+            <a
+              href="https://github.com/badri-sirimalla"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              title="GitHub"
+            >
+
+              <svg class="icon">
+                <use href="#i-github"></use>
+              </svg>
+
+            </a>
+
+
+            <a
+              href="https://www.linkedin.com/in/badri-sirimalla"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              title="LinkedIn"
+            >
+
+              <svg class="icon">
+                <use href="#i-linkedin"></use>
+              </svg>
+
+            </a>
+
+
+            <a
+              href="https://www.hackerrank.com/profile/badrisirimalla21"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="HackerRank"
+              title="HackerRank"
+            >
+
+              <svg class="icon">
+                <use href="#i-code-square"></use>
+              </svg>
+
+            </a>
+
+
+            <a
+              href="https://www.youtube.com/@BadriVerse31"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+              title="YouTube"
+            >
+
+              <svg class="icon">
+                <use href="#i-youtube"></use>
+              </svg>
+
+            </a>
+
+          </div>
+
+
+          <div class="hero-proof" aria-label="Professional focus">
+            <span><strong>03</strong> deployed products</span>
+            <span><i></i> Python-first engineering</span>
+            <span><i></i> AI / ML applications</span>
+          </div>
+
+          <div class="availability-line">
+            <span class="availability-dot"></span>
+            OPEN TO PYTHON • SOFTWARE • AI &amp; ML OPPORTUNITIES
+          </div>
+
+
+          <div class="hero-meta" aria-label="Professional focus">
+
+            <span><b>01</b> Python-first engineering</span>
+            <span><b>02</b> AI / ML applications</span>
+            <span><b>03</b> Deployed full-stack products</span>
+
+          </div>
+
+        </div>
+
+
+        <!-- HERO VISUAL -->
+
+        <div class="hero-photo-wrap reveal">
+
+          <div class="photo-glow"></div>
+
+
+          <div class="hero-photo-frame">
+
+            <img
+              class="hero-photo"
+              src="assets/images/Badri.jpg"
+              alt="Badri Sirimalla — Python Developer | Software Developer | AI & ML Engineer"
+              loading="eager"
+            />
+
+
+            <div class="photo-label">
+
+              <span class="status-dot"></span>
+
+              LOOKING FOR PYTHON • SOFTWARE • AI & ML ROLES
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================
+         ENGINEERING INTRO
+         =================================================== -->
+
+    <section
+      class="section"
+      id="about"
+    >
+
+      <div class="container">
+
+        <div class="section-head reveal">
+
+          <div class="eyebrow">
+            Engineering approach
+          </div>
+
+          <h2>
+            I don't just build interfaces.
+            <br />
+            I build systems.
+          </h2>
+
+          <p>
+            My work sits at the intersection of Python software
+            engineering, backend development, AI, and product-focused
+            full-stack development.
+          </p>
+
+        </div>
+
+
+        <div class="about-grid">
+
+
+          <div class="about-text reveal">
+
+            <p>
+              I'm a Computer Science graduate focused on creating
+              practical software that solves real problems. My main
+              development language is Python, with experience building
+              Flask and FastAPI applications, REST APIs, database-driven
+              systems, and full-stack products.
+            </p>
+
+
+            <p>
+              Alongside traditional software engineering, I work with
+              modern AI technologies including Retrieval-Augmented
+              Generation, embeddings, semantic retrieval, Whisper,
+              Ollama, and machine-learning workflows.
+            </p>
+
+
+            <p>
+              I care about clean architecture, understandable code,
+              reliable APIs, useful interfaces, and applications that
+              can actually be deployed and used.
+            </p>
+
+          </div>
+
+
+          <ul class="facts reveal">
+
+
+            <li>
+
+              <svg class="icon">
+                <use href="#i-map"></use>
+              </svg>
+
+              <div>
+
+                <strong>
+                  Location
+                </strong>
+
+                <span>
+                  Hyderabad, India
+                </span>
+
+              </div>
+
+            </li>
+
+
+            <li>
+
+              <svg class="icon">
+                <use href="#i-code"></use>
+              </svg>
+
+              <div>
+
+                <strong>
+                  Core language
+                </strong>
+
+                <span>
+                  Python
+                </span>
+
+              </div>
+
+            </li>
+
+
+            <li>
+
+              <svg class="icon">
+                <use href="#i-server"></use>
+              </svg>
+
+              <div>
+
+                <strong>
+                  Engineering
+                </strong>
+
+                <span>
+                  Backend • APIs • Full Stack
+                </span>
+
+              </div>
+
+            </li>
+
+
+            <li>
+
+              <svg class="icon">
+                <use href="#i-brain"></use>
+              </svg>
+
+              <div>
+
+                <strong>
+                  AI
+                </strong>
+
+                <span>
+                  RAG • ML • Embeddings
+                </span>
+
+              </div>
+
+            </li>
+
+
+            <li>
+
+              <svg class="icon">
+                <use href="#i-check"></use>
+              </svg>
+
+              <div>
+
+                <strong>
+                  Current focus
+                </strong>
+
+                <span>
+                  Software & Python Development
+                </span>
+
+              </div>
+
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================
+         STACK
+         =================================================== -->
+
+    <section
+      class="section alt"
+      id="skills"
+    >
+
+      <div class="container">
+
+        <div class="section-head reveal">
+
+          <div class="eyebrow">
+            Technical stack
+          </div>
+
+          <h2>
+            Built around Python.
+            <br />
+            Extended with modern engineering.
+          </h2>
+
+          <p>
+            Technologies I use across backend systems, full-stack
+            applications, AI workflows, data processing, and deployment.
+          </p>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+
+          <article class="card skill-card reveal">
+
+            <h3>
+              Programming
+            </h3>
+
+            <p>
+              Core programming and problem-solving foundations.
+            </p>
+
+            <ul class="chips">
+
+              <li>Python</li>
+              <li>SQL</li>
+              <li>JavaScript</li>
+              <li>OOP</li>
+              <li>DSA</li>
+
+            </ul>
+
+          </article>
+
+
+          <article class="card skill-card reveal">
+
+            <h3>
+              Backend Engineering
+            </h3>
+
+            <p>
+              APIs and server-side systems built around Python.
+            </p>
+
+            <ul class="chips">
+
+              <li>Flask</li>
+              <li>FastAPI</li>
+              <li>REST APIs</li>
+              <li>API Integration</li>
+              <li>Python</li>
+
+            </ul>
+
+          </article>
+
+
+          <article class="card skill-card reveal">
+
+            <h3>
+              Frontend
+            </h3>
+
+            <p>
+              Interfaces connected to real application logic.
+            </p>
+
+            <ul class="chips">
+
+              <li>React.js</li>
+              <li>JavaScript</li>
+              <li>Tailwind CSS</li>
+              <li>Responsive UI</li>
+
+            </ul>
+
+          </article>
+
+
+          <article class="card skill-card reveal">
+
+            <h3>
+              AI & Machine Learning
+            </h3>
+
+            <p>
+              Building practical intelligent application workflows.
+            </p>
+
+            <ul class="chips">
+
+              <li>RAG</li>
+              <li>Whisper</li>
+              <li>Ollama</li>
+              <li>Embeddings</li>
+              <li>Semantic Retrieval</li>
+              <li>Scikit-learn</li>
+
+            </ul>
+
+          </article>
+
+
+          <article class="card skill-card reveal">
+
+            <h3>
+              Data & Databases
+            </h3>
+
+            <p>
+              Data processing, SQL systems, and structured storage.
+            </p>
+
+            <ul class="chips">
+
+              <li>SQL</li>
+              <li>DBMS</li>
+              <li>Database Design</li>
+              <li>NumPy</li>
+              <li>Pandas</li>
+
+            </ul>
+
+          </article>
+
+
+          <article class="card skill-card reveal">
+
+            <h3>
+              Tools & Deployment
+            </h3>
+
+            <p>
+              Development, version control, experimentation,
+              and deployment workflows.
+            </p>
+
+            <ul class="chips">
+
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>VS Code</li>
+              <li>Jupyter</li>
+              <li>Render</li>
+              <li>Vercel</li>
+
+            </ul>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================
+         PROJECTS
+         =================================================== -->
+
+    <section
+      class="section"
+      id="projects"
+    >
+
+      <div class="container">
+
+        <div class="section-head reveal">
+
+          <div class="eyebrow">
+            Selected work
+          </div>
+
+          <h2>
+            Software I've actually built.
+          </h2>
+
+          <p>
+            Three deployed products demonstrating Python engineering, AI integration, backend systems, and full-stack execution.
+          </p>
+
+        </div>
+
+
+        <div class="project-grid">
+
+
+          <!-- PROJECT 01 -->
+
+          <article class="card project featured reveal">
+
+            <span class="project-index">01 / FEATURED CASE STUDY</span>
+
+            <div class="project-media project-media--assistant" data-label="AI TEACHING ASSISTANT">
+
+              <img
+                src="assets/images/ai-teaching-assistant.png"
+                alt="AI Teaching Assistant project"
+                loading="lazy"
+                onerror="this.classList.add('image-missing')"
+              />
+
+            </div>
+
+
+            <div class="project-body">
+
+              <span class="project-index">01 / FEATURED</span>
+
+              <span class="badge">
+                AI / RAG
+              </span>
+
+
+              <h3>
+                AI Teaching Assistant
+              </h3>
+
+
+              <p>
+                A production-style RAG learning platform that transcribes educational videos with Whisper, creates semantic embeddings, retrieves relevant knowledge, and generates grounded answers with source context.
+              </p>
+
+
+              <ul class="chips">
+
+                <li>Python</li>
+                <li>Flask</li>
+                <li>RAG</li>
+                <li>Whisper</li>
+                <li>Ollama</li>
+                <li>Embeddings</li>
+
+              </ul>
+
+              <div class="project-meta-grid">
+                <div><span>STATUS</span><strong><i class="live-dot"></i> Live</strong></div>
+                <div><span>ROLE</span><strong>AI / Full Stack</strong></div>
+                <div><span>FOCUS</span><strong>Semantic Retrieval</strong></div>
+              </div>
+
+
+              <div class="btn-row">
+
+                <a
+                  href="https://ai-teaching-assistant-frontend-7lmp.onrender.com/"
+                  class="btn btn-primary btn-sm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live application
+
+                  <svg class="icon">
+                    <use href="#i-external"></use>
+                  </svg>
+
+                </a>
+
+
+                <a
+                  href="https://github.com/badri-sirimalla/AI-Teaching-Assistant"
+                  class="btn btn-outline btn-sm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+
+                  <svg class="icon">
+                    <use href="#i-github"></use>
+                  </svg>
+
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <!-- PROJECT 02 -->
+
+          <article class="card project reveal">
+
+            <span class="project-index">02 / AI PRODUCT</span>
+
+            <div class="project-media project-media--vidsnap" data-label="VIDSNAP AI">
+
+              <img
+                src="assets/images/vidsnap-ai.png"
+                alt="VidSnapAI project"
+                loading="lazy"
+                onerror="this.classList.add('image-missing')"
+              />
+
+            </div>
+
+
+            <div class="project-body">
+
+              <span class="project-index">02</span>
+
+              <span class="badge">
+                AI • Video
+              </span>
+
+
+              <h3>
+                VidSnapAI
+              </h3>
+
+
+              <p>
+                An AI-powered video workflow that combines Python backend processing with automated media handling to turn a multi-step video task into a streamlined web experience.
+              </p>
+
+
+              <ul class="chips">
+
+                <li>Python</li>
+                <li>Flask</li>
+                <li>AI</li>
+                <li>Video Processing</li>
+
+              </ul>
+
+              <div class="project-meta-grid">
+                <div><span>STATUS</span><strong><i class="live-dot"></i> Live</strong></div>
+                <div><span>ROLE</span><strong>Backend / AI</strong></div>
+              </div>
+
+
+              <div class="btn-row">
+
+                <a
+                  href="https://vidsnapai-rzjp.onrender.com"
+                  class="btn btn-primary btn-sm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live application
+
+                  <svg class="icon">
+                    <use href="#i-external"></use>
+                  </svg>
+
+                </a>
+
+
+                <a
+                  href="https://github.com/badri-sirimalla/VidSnapAI"
+                  class="btn btn-outline btn-sm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+
+                  <svg class="icon">
+                    <use href="#i-github"></use>
+                  </svg>
+
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+          <!-- PROJECT 03 -->
+
+          <article class="card project reveal">
+
+            <div class="project-media project-media--resume" data-label="RESUMEIQ">
+
+              <img
+                src="assets/images/resumeiq.png"
+                alt="ResumeIQ project"
+                loading="lazy"
+                onerror="this.classList.add('image-missing')"
+              />
+
+            </div>
+
+
+            <div class="project-body">
+
+              <span class="project-index">03</span>
+
+              <span class="badge">
+                Python • NLP • AI
+              </span>
+
+
+              <h3>
+                ResumeIQ
+              </h3>
+
+
+              <p>
+                A Python-based resume intelligence platform that analyzes resume content against job requirements and returns structured insights through a practical web workflow.
+              </p>
+
+
+              <ul class="chips">
+
+                <li>Python</li>
+                <li>Flask</li>
+                <li>NLP</li>
+                <li>Scikit-learn</li>
+                <li>REST API</li>
+
+              </ul>
+
+              <div class="project-meta-grid">
+                <div><span>STATUS</span><strong><i class="live-dot"></i> Live</strong></div>
+                <div><span>ROLE</span><strong>Python / NLP</strong></div>
+              </div>
+
+
+              <div class="btn-row">
+
+                <a
+                  href="https://resumeiq-8qlv.onrender.com/resume_analyze"
+                  class="btn btn-primary btn-sm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live application
+
+                  <svg class="icon">
+                    <use href="#i-external"></use>
+                  </svg>
+
+                </a>
+
+
+                <a
+                  href="https://github.com/badri-sirimalla/ResumeIQ"
+                  class="btn btn-outline btn-sm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+
+                  <svg class="icon">
+                    <use href="#i-github"></use>
+                  </svg>
+
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================
+         ENGINEERING FOCUS
+         =================================================== -->
+
+    <section class="section alt">
+
+      <div class="container">
+
+        <div class="section-head reveal">
+
+          <div class="eyebrow">
+            What I build
+          </div>
+
+          <h2>
+            From API to intelligence.
+          </h2>
+
+          <p>
+            I work across the layers that turn an idea into a deployable software product — architecture, APIs, AI workflows, interfaces, and delivery.
+          </p>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+
+          <article class="card skill-card reveal">
+
+            <h3>
+              Backend Systems
+            </h3>
+
+            <p>
+              Python applications, REST APIs, authentication,
+              business logic, and service integration.
+            </p>
+
+            <ul class="chips">
+
+              <li>Flask</li>
+              <li>FastAPI</li>
+              <li>REST</li>
+              <li>Python</li>
+
+            </ul>
+
+          </article>
+
+
+          <article class="card skill-card reveal">
+
+            <h3>
+              AI Applications
+            </h3>
+
+            <p>
+              AI features integrated into applications rather than
+              treated as isolated experiments.
+            </p>
+
+            <ul class="chips">
+
+              <li>RAG</li>
+              <li>LLM</li>
+              <li>Embeddings</li>
+              <li>Whisper</li>
+
+            </ul>
+
+          </article>
+
+
+          <article class="card skill-card reveal">
+
+            <h3>
+              Full-Stack Products
+            </h3>
+
+            <p>
+              Connecting frontend experiences with APIs, databases,
+              AI workflows, and deployed backend systems.
+            </p>
+
+            <ul class="chips">
+
+              <li>React</li>
+              <li>JavaScript</li>
+              <li>APIs</li>
+              <li>SQL</li>
+
+            </ul>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================
+         EDUCATION
+         =================================================== -->
+
+    <section
+      class="section"
+      id="education"
+    >
+
+      <div class="container">
+
+        <div class="section-head reveal">
+
+          <div class="eyebrow">
+            Education
+          </div>
+
+          <h2>
+            Computer Science foundation.
+          </h2>
+
+          <p>
+            Computer Science foundation supported by deployed software, AI, and backend projects.
+          </p>
+
+        </div>
+
+
+        <div class="grid">
+
+
+          <article class="card edu reveal">
+
+            <svg class="icon-lg">
+              <use href="#i-graduation"></use>
+            </svg>
+
+            <div>
+
+              <h3>
+                B.Tech — Computer Science & Engineering
+              </h3>
+
+              <p class="edu-college">
+                Annamacharya Institute of Technology and Sciences,
+                Hyderabad, India
+              </p>
+
+              <ul class="meta">
+
+                <li>
+                  2026
+                </li>
+
+                <li>
+                  CGPA 8.0 / 10
+                </li>
+
+              </ul>
+
+            </div>
+
+          </article>
+
+
+          <article class="card edu reveal">
+
+            <svg class="icon-lg">
+              <use href="#i-graduation"></use>
+            </svg>
+
+            <div>
+
+              <h3>
+                Intermediate
+              </h3>
+
+              <p class="edu-college">
+                Kamareddy, Telangana, India
+              </p>
+
+              <ul class="meta">
+
+                <li>
+                  Higher Secondary Education
+                </li>
+
+              </ul>
+
+            </div>
+
+          </article>
+
+
+          <article class="card edu reveal">
+
+            <svg class="icon-lg">
+              <use href="#i-graduation"></use>
+            </svg>
+
+            <div>
+
+              <h3>
+                Secondary School Certificate
+              </h3>
+
+              <p class="edu-college">
+                ZPHS Mohammadapur,
+                Kamareddy, Telangana
+              </p>
+
+              <ul class="meta">
+
+                <li>
+                  Secondary Education
+                </li>
+
+              </ul>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================
+         CERTIFICATIONS
+         =================================================== -->
+
+    <section
+      class="section alt"
+      id="certifications"
+    >
+
+      <div class="container">
+
+        <div class="section-head reveal">
+
+          <div class="eyebrow">
+            Certifications
+          </div>
+
+          <h2>
+            Learning beyond the classroom.
+          </h2>
+
+          <p>
+            Credentials covering Python programming, SQL,
+            and data science.
+          </p>
+
+        </div>
+
+
+        <div class="cert-grid">
+
+
+          <article class="card cert reveal">
+
+            <svg class="icon-lg">
+              <use href="#i-award"></use>
+            </svg>
+
+            <h3>
+              Data Science Bootcamp
+            </h3>
+
+            <p>
+              CodeWithHarry
+            </p>
+
+            <div class="btn-row">
+
+              <a
+                href="https://drive.google.com/file/d/1ppvj4QXg-RXKgR831xPesou-lFtpMrfF/view?usp=sharing"
+                class="link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View certificate
+
+                <svg class="icon">
+                  <use href="#i-external"></use>
+                </svg>
+
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <article class="card cert reveal">
+
+            <svg class="icon-lg">
+              <use href="#i-award"></use>
+            </svg>
+
+            <h3>
+              Python Programming
+            </h3>
+
+            <p>
+              HackerRank
+            </p>
+
+            <div class="btn-row">
+
+              <a
+                href="https://www.hackerrank.com/certificates/f5446f4ddbfb"
+                class="link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Verify certificate
+
+                <svg class="icon">
+                  <use href="#i-external"></use>
+                </svg>
+
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <article class="card cert reveal">
+
+            <svg class="icon-lg">
+              <use href="#i-award"></use>
+            </svg>
+
+            <h3>
+              SQL
+            </h3>
+
+            <p>
+              HackerRank
+            </p>
+
+            <div class="btn-row">
+
+              <a
+                href="https://www.hackerrank.com/certificates/f4bdd8d006ff"
+                class="link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Verify certificate
+
+                <svg class="icon">
+                  <use href="#i-external"></use>
+                </svg>
+
+              </a>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================
+         DEVELOPER PRESENCE
+         =================================================== -->
+
+    <section
+      class="section"
+      id="profiles"
+    >
+
+      <div class="container">
+
+        <div class="section-head reveal">
+
+          <div class="eyebrow">
+            Developer presence
+          </div>
+
+          <h2>
+            Find me on the web.
+          </h2>
+
+          <p>
+            Code, professional work, technical credentials,
+            and content.
+          </p>
+
+        </div>
+
+
+        <div class="ach-grid">
+
+
+          <article class="card ach reveal">
+
+            <svg class="icon-lg">
+              <use href="#i-github"></use>
+            </svg>
+
+            <div class="ach-num">
+              GitHub
+            </div>
+
+            <p>
+              Projects, experiments, and software development work.
+            </p>
+
+            <div class="btn-row">
+
+              <a
+                href="https://github.com/badri-sirimalla"
+                class="link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Explore GitHub
+
+                <svg class="icon">
+                  <use href="#i-arrow"></use>
+                </svg>
+
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <article class="card ach reveal">
+
+            <svg class="icon-lg">
+              <use href="#i-linkedin"></use>
+            </svg>
+
+            <div class="ach-num">
+              LinkedIn
+            </div>
+
+            <p>
+              Professional profile and software engineering journey.
+            </p>
+
+            <div class="btn-row">
+
+              <a
+                href="https://www.linkedin.com/in/badri-sirimalla"
+                class="link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View profile
+
+                <svg class="icon">
+                  <use href="#i-arrow"></use>
+                </svg>
+
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <article class="card ach reveal">
+
+            <svg class="icon-lg">
+              <use href="#i-code-square"></use>
+            </svg>
+
+            <div class="ach-num">
+              HackerRank
+            </div>
+
+            <p>
+              Programming and SQL certifications.
+            </p>
+
+            <div class="btn-row">
+
+              <a
+                href="https://www.hackerrank.com/profile/badrisirimalla21"
+                class="link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View profile
+
+                <svg class="icon">
+                  <use href="#i-arrow"></use>
+                </svg>
+
+              </a>
+
+            </div>
+
+          </article>
+
+
+          <article class="card ach reveal">
+
+            <svg class="icon-lg">
+              <use href="#i-youtube"></use>
+            </svg>
+
+            <div class="ach-num">
+              YouTube
+            </div>
+
+            <p>
+              Content published through BadriVerse31.
+            </p>
+
+            <div class="btn-row">
+
+              <a
+                href="https://www.youtube.com/@BadriVerse31"
+                class="link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit channel
+
+                <svg class="icon">
+                  <use href="#i-arrow"></use>
+                </svg>
+
+              </a>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ===================================================
+         CONTACT
+         =================================================== -->
+
+    <section
+      class="section alt"
+      id="contact"
+    >
+
+      <div class="container">
+
+        <div class="section-head center reveal">
+
+          <div class="eyebrow">
+            Contact
+          </div>
+
+          <h2>
+            Have an opportunity?
+            <br />
+            Let's talk.
+          </h2>
+
+          <p>
+            I'm currently looking for opportunities as a Python Developer,
+            Software Developer, or AI & ML Engineer.
+          </p>
+
+        </div>
+
+
+        <div class="contact-box reveal">
+
+
+          <p class="contact-lead">
+            Whether you're hiring, building a product, or looking
+            for someone who enjoys turning technical ideas into
+            working software, feel free to reach out.
+          </p>
+
+
+          <ul class="contact-list">
+
+
+            <li>
+
+              <svg class="icon">
+                <use href="#i-mail"></use>
+              </svg>
+
+              <div>
+
+                <strong>
+                  Email
+                </strong>
+
+                <a
+                  href="mailto:badrisirimalla2003@gmail.com"
+                >
+                  badrisirimalla2003@gmail.com
+                </a>
+
+              </div>
+
+            </li>
+
+
+            <li>
+
+              <svg class="icon">
+                <use href="#i-phone"></use>
+              </svg>
+
+              <div>
+
+                <strong>
+                  Phone
+                </strong>
+
+                <a
+                  href="tel:+917013243023"
+                >
+                  +91 7013243023
+                </a>
+
+              </div>
+
+            </li>
+
+
+            <li>
+
+              <svg class="icon">
+                <use href="#i-map"></use>
+              </svg>
+
+              <div>
+
+                <strong>
+                  Location
+                </strong>
+
+                <span>
+                  Hyderabad, India
+                </span>
+
+              </div>
+
+            </li>
+
+
+            <li>
+
+              <svg class="icon">
+                <use href="#i-linkedin"></use>
+              </svg>
+
+              <div>
+
+                <strong>
+                  LinkedIn
+                </strong>
+
+                <a
+                  href="https://www.linkedin.com/in/badri-sirimalla"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  linkedin.com/in/badri-sirimalla
+                </a>
+
+              </div>
+
+            </li>
+
+
+            <li>
+
+              <svg class="icon">
+                <use href="#i-github"></use>
+              </svg>
+
+              <div>
+
+                <strong>
+                  GitHub
+                </strong>
+
+                <a
+                  href="https://github.com/badri-sirimalla"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  github.com/badri-sirimalla
+                </a>
+
+              </div>
+
+            </li>
+
+
+            <li>
+
+              <svg class="icon">
+                <use href="#i-youtube"></use>
+              </svg>
+
+              <div>
+
+                <strong>
+                  YouTube
+                </strong>
+
+                <a
+                  href="https://www.youtube.com/@BadriVerse31"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  @BadriVerse31
+                </a>
+
+              </div>
+
+            </li>
+
+          </ul>
+
+
+          <div class="btn-row">
+
+            <a
+              href="mailto:badrisirimalla2003@gmail.com"
+              class="btn btn-primary"
+            >
+
+              Email me
+
+              <svg class="icon">
+                <use href="#i-arrow"></use>
+              </svg>
+
+            </a>
+
+
+            <a
+              href="assets/Badri_Sirimalla_Resume.pdf"
+              class="btn btn-outline"
+              target="_blank"
+              rel="noopener"
+            >
+
+              View resume
+
+              <svg class="icon">
+                <use href="#i-external"></use>
+              </svg>
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+
+  <footer class="site-footer">
+
+    <div class="container footer-inner">
+
+
+      <div>
+
+        <div class="footer-name">
+          Badri Sirimalla
+        </div>
+
+        <div class="footer-role">
+          Python Developer • Software Developer • AI & ML Engineer
+        </div>
+
+      </div>
+
+
+      <div
+        class="social-row"
+        aria-label="Footer social links"
+      >
+
+        <a
+          href="https://github.com/badri-sirimalla"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+          title="GitHub"
+        >
+
+          <svg class="icon">
+            <use href="#i-github"></use>
+          </svg>
+
+        </a>
+
+
+        <a
+          href="https://www.linkedin.com/in/badri-sirimalla"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+          title="LinkedIn"
+        >
+
+          <svg class="icon">
+            <use href="#i-linkedin"></use>
+          </svg>
+
+        </a>
+
+
+        <a
+          href="https://www.youtube.com/@BadriVerse31"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="YouTube"
+          title="YouTube"
+        >
+
+          <svg class="icon">
+            <use href="#i-youtube"></use>
+          </svg>
+
+        </a>
+
+      </div>
+
+
+      <p class="copyright">
+        © <span id="year"></span>
+        Badri Sirimalla. Built with purpose.
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =====================================================
+       JAVASCRIPT
+       ===================================================== -->
+
+  <script>
+
+    /* =========================
+       ENABLE REVEAL SYSTEM
+       ========================= */
+
+    document.documentElement.classList.add(
+      "js-reveal"
+    );
+
+
+    /* =========================
+       HEADER SCROLL
+       ========================= */
+
+    const header =
+      document.querySelector(".site-header");
+
+
+    const updateHeader =
+      () => {
+
+        if (!header) return;
+
+        if (window.scrollY > 12) {
+
+          header.classList.add(
+            "scrolled"
+          );
+
+        } else {
+
+          header.classList.remove(
+            "scrolled"
+          );
+
+        }
+
+      };
+
+
+    updateHeader();
+
+
+    window.addEventListener(
+      "scroll",
+      updateHeader,
+      {
+        passive: true
+      }
+    );
+
+
+    /* =========================
+       MOBILE NAVIGATION
+       ========================= */
+
+    const menuToggle =
+      document.getElementById(
+        "menu-toggle"
+      );
+
+
+    const siteNav =
+      document.getElementById(
+        "site-nav"
+      );
+
+
+    const menuIcon =
+      menuToggle?.querySelector(
+        "use"
+      );
+
+
+    const closeMenu =
+      () => {
+
+        if (!siteNav || !menuToggle) {
+          return;
+        }
+
+
+        siteNav.classList.remove(
+          "open"
+        );
+
+
+        menuToggle.setAttribute(
+          "aria-expanded",
+          "false"
+        );
+
+
+        menuToggle.setAttribute(
+          "aria-label",
+          "Open navigation"
+        );
+
+
+        if (menuIcon) {
+
+          menuIcon.setAttribute(
+            "href",
+            "#i-menu"
+          );
+
+        }
+
+      };
+
+
+    menuToggle?.addEventListener(
+      "click",
+      () => {
+
+        const open =
+          siteNav?.classList.toggle(
+            "open"
+          );
+
+
+        menuToggle.setAttribute(
+          "aria-expanded",
+          String(Boolean(open))
+        );
+
+
+        menuToggle.setAttribute(
+          "aria-label",
+          open
+            ? "Close navigation"
+            : "Open navigation"
+        );
+
+
+        if (menuIcon) {
+
+          menuIcon.setAttribute(
+            "href",
+            open
+              ? "#i-x"
+              : "#i-menu"
+          );
+
+        }
+
+      }
+    );
+
+
+    document
+      .querySelectorAll(
+        ".site-nav a"
+      )
+      .forEach(
+        (link) => {
+
+          link.addEventListener(
+            "click",
+            closeMenu
+          );
+
+        }
+      );
+
+
+    document.addEventListener(
+      "click",
+      (event) => {
+
+        if (
+          !siteNav ||
+          !menuToggle
+        ) {
+          return;
+        }
+
+
+        if (
+          siteNav.classList.contains(
+            "open"
+          ) &&
+          !siteNav.contains(
+            event.target
+          ) &&
+          !menuToggle.contains(
+            event.target
+          )
+        ) {
+
+          closeMenu();
+
+        }
+
+      }
+    );
+
+
+    /* =========================
+       THEME
+       ========================= */
+
+    const themeToggle =
+      document.getElementById(
+        "theme-toggle"
+      );
+
+
+    const savedTheme =
+      localStorage.getItem(
+        "badri-theme"
+      );
+
+
+    if (savedTheme) {
+
+      document.documentElement.dataset.theme =
+        savedTheme;
+
+    }
+
+
+    const updateThemeIcon =
+      () => {
+
+        const theme =
+          document.documentElement
+            .dataset.theme;
+
+
+        const icon =
+          themeToggle?.querySelector(
+            "use"
+          );
+
+
+        if (!icon) return;
+
+
+        icon.setAttribute(
+          "href",
+          theme === "dark"
+            ? "#i-moon"
+            : "#i-sun"
+        );
+
+      };
+
+
+    updateThemeIcon();
+
+
+    themeToggle?.addEventListener(
+      "click",
+      () => {
+
+        const current =
+          document.documentElement
+            .dataset.theme;
+
+
+        const next =
+          current === "dark"
+            ? "light"
+            : "dark";
+
+
+        document.documentElement.dataset.theme =
+          next;
+
+
+        localStorage.setItem(
+          "badri-theme",
+          next
+        );
+
+
+        updateThemeIcon();
+
+      }
+    );
+
+
+    /* =========================
+       SCROLL REVEALS
+       ========================= */
+
+    const revealElements =
+      document.querySelectorAll(
+        ".reveal"
+      );
+
+
+    if (
+      "IntersectionObserver"
+      in window
+    ) {
+
+      const revealObserver =
+        new IntersectionObserver(
+          (entries, observer) => {
+
+            entries.forEach(
+              (entry) => {
+
+                if (
+                  !entry.isIntersecting
+                ) {
+                  return;
+                }
+
+
+                entry.target.classList.add(
+                  "in"
+                );
+
+
+                observer.unobserve(
+                  entry.target
+                );
+
+              }
+            );
+
+          },
+          {
+            threshold: 0.08,
+            rootMargin:
+              "0px 0px -40px 0px"
+          }
+        );
+
+
+      revealElements.forEach(
+        (element) => {
+
+          revealObserver.observe(
+            element
+          );
+
+        }
+      );
+
+    } else {
+
+      revealElements.forEach(
+        (element) => {
+
+          element.classList.add(
+            "in"
+          );
+
+        }
+      );
+
+    }
+
+
+    /* =========================
+       ACTIVE NAVIGATION
+       ========================= */
+
+    const sections =
+      document.querySelectorAll(
+        "main section[id]"
+      );
+
+
+    const navLinks =
+      document.querySelectorAll(
+        ".site-nav a"
+      );
+
+
+    if (
+      "IntersectionObserver"
+      in window
+    ) {
+
+      const sectionObserver =
+        new IntersectionObserver(
+          (entries) => {
+
+            entries.forEach(
+              (entry) => {
+
+                if (
+                  !entry.isIntersecting
+                ) {
+                  return;
+                }
+
+
+                const id =
+                  entry.target.getAttribute(
+                    "id"
+                  );
+
+
+                navLinks.forEach(
+                  (link) => {
+
+                    link.classList.toggle(
+                      "active",
+                      link.getAttribute(
+                        "href"
+                      ) === `#${id}`
+                    );
+
+                  }
+                );
+
+              }
+            );
+
+          },
+          {
+            rootMargin:
+              "-25% 0px -65% 0px"
+          }
+        );
+
+
+      sections.forEach(
+        (section) => {
+
+          sectionObserver.observe(
+            section
+          );
+
+        }
+      );
+
+    }
+
+
+    /* =========================
+       CURRENT YEAR
+       ========================= */
+
+    const year =
+      document.getElementById(
+        "year"
+      );
+
+
+    if (year) {
+
+      year.textContent =
+        new Date().getFullYear();
+
+    }
+
+
+    /* =========================
+       ESCAPE KEY
+       ========================= */
+
+    document.addEventListener(
+      "keydown",
+      (event) => {
+
+        if (
+          event.key === "Escape"
+        ) {
+
+          closeMenu();
+
+        }
+
+      }
+    );
+
+  </script>
+
+</body>
+</html>
